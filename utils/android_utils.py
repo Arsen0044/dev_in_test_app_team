@@ -9,12 +9,13 @@ def android_get_desired_capabilities():
         'newCommandTimeout': 500,
         'noSign': True,
         'platformName': "Android",
-        'platformVersion': "10",
+        'platformVersion': "11",
         'resetKeyboard': True,
         'systemPort': 8301,
         'takesScreenshot': True,
         'udid': "emulator-5554",
         'app': f"{file_path}",
+        'appWaitForLaunch': False,
         'appPackage': "com.ajaxsystems",
         'appActivity': "com.ajaxsystems.ui.activity.LauncherActivity"
     }
